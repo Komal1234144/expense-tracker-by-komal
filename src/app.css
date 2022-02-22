@@ -1,0 +1,36 @@
+
+  .app__container{
+    max-width : 95vw;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    padding-bottom: 30%;
+}
+
+.mobile-only{
+  display: none;
+} 
+
+
+
+@media(max-width : 900px){
+  .app__container{
+      max-width: 90vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 98%;
+      margin-top: 30px;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+
+  .mobile-only{
+    display: block;
+  }
+}

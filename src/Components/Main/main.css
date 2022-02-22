@@ -1,0 +1,40 @@
+
+.main__card{
+    padding : 10px 5px; 
+    font-size: 17px; 
+    max-height: 95%;
+    margin-top: 5%;
+}
+
+.app__name{
+  
+    font-weight: bold;
+}
+
+.heading{
+  margin: 20px 0;
+  text-align: center;  
+}
+
+.total__balance{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.list__grid{
+  height : 150px ;
+  overflow-y: auto;
+}
+
+
+@media(max-width : 900px){
+
+  .main__card{
+    max-height: 90vh;
+    margin-top : 0%;
+  }
+  .list__grid{
+    height: 150px;
+    overflow-y: auto;
+  }
+}

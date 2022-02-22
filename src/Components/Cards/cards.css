@@ -1,0 +1,63 @@
+
+.income{
+    max-height: 150px;
+    margin-top: 20%;
+    margin-bottom: 30vh;
+    border-bottom: 8px solid rgb(176, 235, 176);
+}
+
+.expand-income{
+    margin-top: 20%;
+    margin-bottom: 30vh;
+    border-bottom: 8px solid rgb(176, 235, 176);
+}
+
+.expense{
+    max-height : 150px;
+    margin-top: 20%;
+    margin-bottom: 30vh;
+    border-bottom: 8px solid rgb(233, 153, 153);
+}
+
+.expand-expense{
+    margin-top: 20%;
+    margin-bottom: 30vh;
+    border-bottom: 8px solid rgb(233, 153, 153);
+}
+
+.doughnut{
+    margin : auto;
+    width : 200px !important;  
+    height: 200px !important; 
+}
+
+
+
+@media(max-width : 900px){
+
+    .income{
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+
+    .expand-income{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .expense{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .expand-expense{  
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .doughnut{
+        margin : auto;
+        width : 300px !important;  
+        height: 280px !important; 
+    }
+}

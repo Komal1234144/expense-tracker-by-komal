@@ -1,0 +1,51 @@
+.list__container{
+  /* width : 100%; */
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  cursor : pointer;
+}
+
+.list__container-large{
+  width : 100%;
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  cursor : pointer;
+}
+
+.money{
+  width : clamp(30px , 1.5vw , 50px);
+  height : clamp(30px , 1.5vw , 50px);
+  border-radius: 50%;
+  border : none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#income{
+  background-color: green;
+}
+
+#expense{
+  background-color: red;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;  
+  width : 70%;
+}
+
+.detail__name{
+  font-weight: bold !important;
+}
+
+.delete{
+  font-size:  clamp(30px , 1.5vw , 50px) !important;
+}
