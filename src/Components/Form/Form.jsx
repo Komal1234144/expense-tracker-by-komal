@@ -87,6 +87,9 @@ useEffect(()=>{
         arr[i].selectedIndex = 0
       }
       setData(initialState)
+      setTimeout(()=>{
+        segment = undefined;
+      },1500)
     }else{
       return 
     }
@@ -97,9 +100,9 @@ useEffect(()=>{
   return (
     <div>
     <AlertComponent open={open} setOpen={setOpen}/>
-    <Typography variant="subtitle2" align="center">
+    <Typography variant="subtitle2" align="center" margin={'15px 0px'}>
           {segment && segment.words.map((w)=>w.value).join(" ")}
-        </Typography>
+    </Typography>
     <Grid container spacing={2} className='form__grid'>
        <Grid item xs={6} >
            <select  className='select__grid select' 

@@ -12,10 +12,10 @@ const ExpenseCard = ({title}) => {
    const isExpense = transactions.find((t)=>t.type=='Expense')
 
   return (
-     <Card className={isExpense ? 'expand-expense' : 'expense'}>
-       <CardHeader title={title}/>
-       <CardContent >
-         <Typography variant='h5'>{!total ? 'Rs.0' : `Rs. ${total}`}</Typography>
+     <Card className={isExpense ? 'expand-expense' : 'expense'}  style={{padding : '20px'}}>
+       <p style={{fontSize : '30px', paddingLeft:'0'}}>{title}</p>
+       <CardContent style={{marginTop : '0' ,padding:'0'}} >
+       <p style={{fontSize : '20px', color :'grey'}}>{!total ? 'Rs.0' : `Rs. ${total}`}</p>
         {chartData && <Doughnut data={chartData} width='600px' height='600px' className='doughnut'/>}
        </CardContent>
      </Card> 

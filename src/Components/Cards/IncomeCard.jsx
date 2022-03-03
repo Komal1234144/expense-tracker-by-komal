@@ -11,11 +11,11 @@ const IncomeCard = ({title}) => {
    const {chartData , total } = transactions.length>0 &&  chartTransactions(title , transactions )
    const isIncome = transactions.find((t)=>t.type=='Income')
 
-  return (
-     <Card className={isIncome ? 'expand-income' : 'income'}>
-       <CardHeader title={title}/>
-       <CardContent >
-         <Typography variant='h5'>{!total ? 'Rs.0' : `Rs. ${total}`}</Typography>
+  return ( 
+     <Card className={isIncome ? 'expand-income' : 'income'} style={{padding : '20px'}}>
+       <p style={{fontSize : '30px', paddingLeft:'0px'}}>{title}</p>
+       <CardContent style={{marginTop : '0' ,padding:'0'}} >
+         <p style={{fontSize : '20px', color :'grey'}}>{!total ? 'Rs.0' : `Rs. ${total}`}</p>
         {chartData && <Doughnut data={chartData} width='600px' height='600px' className='doughnut'/>}
        </CardContent>
      </Card> 

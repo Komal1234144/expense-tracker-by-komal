@@ -6,6 +6,12 @@
     margin-top: 5%;
 }
 
+.powered-by{
+  text-align: center;
+  color : grey;
+  font-size: 15px;
+}
+
 .app__name{
   
     font-weight: bold;
@@ -30,7 +36,7 @@
 @media(max-width : 900px){
 
   .main__card{
-    max-height: 90vh;
+    max-height: 95vh;
     margin-top : 0%;
   }
   .list__grid{

@@ -18,10 +18,10 @@ let total
   
   return (
     <Card className="main__card">
-       <Typography variant='h6' style={{color:'orange' , fontWeight:'bold'}}>Expense Tracker</Typography>
-       <p>Powered by Speechly</p>
+       <Typography variant='h6' style={{color:'orange' , fontWeight:'bold', textAlign:'center'}}>Expense Tracker</Typography>
+       <p className="powered-by">Powered by Speechly</p>
        <div className="heading">
-         <Typography variant="h5">{`Total Balance ${total} Rs.`}</Typography>
+         <Typography variant="h5" style={{marginBottom : '15px'}}>{`Total Balance ${total} Rs.`}</Typography>
            <InfoCard/>
        </div>
        <hr/>

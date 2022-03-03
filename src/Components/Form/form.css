@@ -1,5 +1,5 @@
 .form__grid{
-  padding : 20px 0;  
+  margin-bottom : 25px ;  
 }
 
 .select__grid{
@@ -12,9 +12,17 @@
   height: 2em;
   margin-left : 15px;
   margin-top: 20px;
-  border : 2px solid rgb(167, 132, 167);
-  color : rgb(167, 132, 167);
+  border : 2px solid orange;
+  color : orange;
   background-color: transparent;
   font-size: 17px;
   cursor : pointer;
+}
+
+@media(max-width : 900px){
+  .form__button{
+    width : 50%;
+    margin: auto;
+    margin-top: 15px;
+  }
 }
