@@ -4,7 +4,7 @@ A expense-tracker app where you can add and delete income/expense manually as we
 
 <h1>Installation</h1>
   
-    Run 'npm' to install dpendencies 
+    Run 'npm install' to install dpendencies 
     
     Run 'npm start' to start the website
   
